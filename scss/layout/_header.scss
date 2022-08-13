@@ -1,0 +1,46 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 50px;
+}
+
+.header__link {
+    display: inline-flex;
+    align-items: center;
+    fill: currentColor;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header__mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.header__phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.header__link {
+    transition: color var(--timing-function);
+}
+
+.header__link:hover,
+.header__link:focus {
+    color: var(--accent-color);
+}

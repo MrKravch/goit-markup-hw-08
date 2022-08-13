@@ -1,0 +1,26 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity var(--timing-function), visibility var(--timing-function),
+    transform var(--timing-function);
+
+  &--is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    & .modal {
+      transform: translate(-50%, -50%) scale(0.25);
+    }
+  }
+
+  &--position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+}

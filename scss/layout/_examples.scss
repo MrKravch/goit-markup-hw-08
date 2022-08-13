@@ -1,0 +1,61 @@
+.examples {
+  @extend %section;
+}
+
+.examples-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+
+  &--offset {
+    margin-bottom: 50px;
+  }
+}
+
+.examples__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow var(--timing-function);
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
+  }
+}
+
+.examples__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.examples__link:hover .overlay--position,
+.examples__link:focus .overlay--position {
+  transform: translateY(-100%);
+}
+
+.examples__team-wrapper {
+  border: solid #eeeeee 1px;
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.examples__wrapper-title {
+  color: var(--secondly-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}
+
+.examples__wrapper-text {
+  color: var(--main-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
