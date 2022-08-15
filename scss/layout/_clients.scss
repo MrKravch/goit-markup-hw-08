@@ -2,7 +2,15 @@
   @extend %section;
 
   &__list {
-    --items: 6;
+    --items: 2;
+
+    @media screen and (min-width: 768px) {
+      --items: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 6;
+    }
   }
 
   &__link {
@@ -11,13 +19,21 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
     transition: color var(--timing-function), border var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__link:hover,
