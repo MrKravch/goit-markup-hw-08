@@ -1,22 +1,29 @@
 .subscription {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  // gap: 12px;
 
   &__input {
     margin: 0;
     padding: 15px 16px;
-    min-width: 358px;
+    min-width: 100%;
+    // min-width: 358px;
     height: 50px;
 
     color: #ffffff;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
 
     outline: transparent;
     transition: border-color var(--timing-function);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
   }
 
   &__input:focus {
