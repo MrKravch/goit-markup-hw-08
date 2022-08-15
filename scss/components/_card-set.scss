@@ -1,10 +1,11 @@
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 
-    &__items {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  &__items {
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
+  }
 }
-}
-

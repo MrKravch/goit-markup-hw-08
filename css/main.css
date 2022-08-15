@@ -32,7 +32,12 @@
 }
 
 .examples, .clients, .ourteam, .ourwork, .advantages, .hero {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .examples, .clients, .ourteam, .ourwork, .advantages, .hero {
+    padding: 94px 0;
+  }
 }
 
 body {
@@ -133,11 +138,25 @@ p {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .socials-list {
@@ -466,7 +485,17 @@ p {
 }
 
 .advantages__list {
-  --items: 4;
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    --items: 4;
+  }
 }
 .advantages__thumb {
   display: -webkit-box;
@@ -478,11 +507,21 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__thumb {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__thumb {
+    width: 270px;
+  }
 }
 .advantages__icon {
   width: 70px;
@@ -495,6 +534,11 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .advantages__subtitle {
+    text-align: center;
+  }
 }
 .advantages__text {
   font-size: 14px;
