@@ -338,8 +338,8 @@ p {
 .checkbox-agreement__text {
   display: block;
   text-align: left;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -347,6 +347,11 @@ p {
           user-select: none;
   text-underline-position: under;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-agreement__text {
+    line-height: 1.7142857143;
+  }
 }
 .checkbox-agreement__link {
   display: inline-block;
@@ -970,6 +975,7 @@ p {
 
 .modal {
   padding: 40px;
+  width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -979,9 +985,18 @@ p {
   transition: transform var(--timing-function);
   transition: transform var(--timing-function), -webkit-transform var(--timing-function);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal--position {
   position: absolute;
-  width: 528px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1001,8 +1016,13 @@ p {
   text-align: center;
   color: #212121;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .registration-form__title {
+    line-height: 1.15;
+  }
 }
 .registration-form__group {
   margin-bottom: 20px;

@@ -7,9 +7,13 @@
     text-align: center;
     color: #212121;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
 
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: calc(23 / 20);
+    }
   }
 
   &__group {
