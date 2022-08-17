@@ -4,7 +4,15 @@
   background-color: var(--secondary-white-color);
 
   &__list {
-    --items: 4;
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 4;
+    }
   }
 
   &__item {
@@ -18,7 +26,11 @@
 
   &__wrapper {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__subtitle {

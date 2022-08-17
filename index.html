@@ -142,13 +142,17 @@
         </div>
       </section>
       <!-- Ourwork -->
-      <!-- <section class="ourwork section">
+      <section class="ourwork section">
         <div class="container">
           <h2 class="section-title section-title--offset">Чим ми займаємося</h2>
           <ul class="ourwork__list card-set">
             <li class="ourwork__item card-set__items">
               <img
-                src="./images/what-we-do-1.jpg"
+                srcset="
+                  ./images/ourwork/what-we-do-1@1x_lg.jpg 1x,
+                  ./images/ourwork/what-we-do-1@2x_lg.jpg 2x
+                "
+                src="./images/ourwork/what-we-do-1@1x_lg.jpg"
                 width="370"
                 height="294"
                 alt="ноутбук и клавиатура"
@@ -159,7 +163,11 @@
             </li>
             <li class="ourwork__item card-set__items">
               <img
-                src="./images/what-we-do-2.jpg"
+                srcset="
+                  ./images/ourwork/what-we-do-2@1x_lg.jpg 1x,
+                  ./images/ourwork/what-we-do-2@2x_lg.jpg 2x
+                "
+                src="./images/ourwork/what-we-do-2@1x_lg.jpg"
                 width="370"
                 height="294"
                 alt="ноутбук и телефон"
@@ -170,7 +178,11 @@
             </li>
             <li class="ourwork__item card-set__items">
               <img
-                src="./images/what-we-do-3.jpg"
+                srcset="
+                  ./images/ourwork/what-we-do-3@1x_lg.jpg 1x,
+                  ./images/ourwork/what-we-do-3@2x_lg.jpg 2x
+                "
+                src="./images/ourwork/what-we-do-3@1x_lg.jpg"
                 width="370"
                 height="294"
                 alt="планшет в руке"
@@ -181,19 +193,72 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Ourteam -->
-      <!-- <section class="ourteam section">
+      <section class="ourteam section">
         <div class="container">
           <h2 class="section-title section-title--offset">Наша команда</h2>
           <ul class="ourteam__list card-set">
             <li class="ourteam__item card-set__items">
-              <img
-                src="./images/our-team-1.jpg"
-                width="270"
-                height="260"
-                alt=""
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-1@1x_lg.webp 1x,
+                    ./images/ourteam/our-team-1@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-1@1x_lg.jpg 1x,
+                    ./images/ourteam/our-team-1@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-1@1x_md.webp 1x,
+                    ./images/ourteam/our-team-1@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-1@1x_md.jpg 1x,
+                    ./images/ourteam/our-team-1@2x_md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-1@1x_sm.webp 1x,
+                    ./images/ourteam/our-team-1@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-1@1x_sm.jpg 1x,
+                    ./images/ourteam/our-team-1@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/ourteam/our-team-1@1x_sm.jpg"
+                  width="450"
+                  height="260"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="ourteam__wrapper">
                 <h3 class="ourteam__subtitle">Ігор Дем'яненко</h3>
                 <p class="ourteam__text" lang="en">Product Designer</p>
@@ -254,12 +319,65 @@
               </div>
             </li>
             <li class="ourteam__item card-set__items">
-              <img
-                src="./images/our-team-2.jpg"
-                width="270"
-                height="260"
-                alt=""
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-2@1x_lg.webp 1x,
+                    ./images/ourteam/our-team-2@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-2@1x_lg.jpg 1x,
+                    ./images/ourteam/our-team-2@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet  screen -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-2@1x_md.webp 1x,
+                    ./images/ourteam/our-team-2@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-2@1x_md.jpg 1x,
+                    ./images/ourteam/our-team-2@2x_md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-2@1x_sm.webp 1x,
+                    ./images/ourteam/our-team-2@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-2@1x_sm.jpg 1x,
+                    ./images/ourteam/our-team-2@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/ourteam/our-team-2@1x_lg.jpg"
+                  width="450"
+                  height="260"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="ourteam__wrapper">
                 <h3 class="ourteam__subtitle">Ольга Репіна</h3>
                 <p class="ourteam__text" lang="en">Frontend Developer</p>
@@ -320,12 +438,65 @@
               </div>
             </li>
             <li class="ourteam__item card-set__items">
-              <img
-                src="./images/our-team-3.jpg"
-                width="270"
-                height="260"
-                alt=""
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-3@1x_lg.webp 1x,
+                    ./images/ourteam/our-team-3@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-3@1x_lg.jpg 1x,
+                    ./images/ourteam/our-team-3@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- teblet screen -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-3@1x_md.webp 1x,
+                    ./images/ourteam/our-team-3@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-3@1x_md.jpg 1x,
+                    ./images/ourteam/our-team-3@2x_md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-3@1x_sm.webp 1x,
+                    ./images/ourteam/our-team-3@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-3@1x_sm.jpg 1x,
+                    ./images/ourteam/our-team-3@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/ourteam/our-team-3@1x_sm.jpg"
+                  width="450"
+                  height="260"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="ourteam__wrapper">
                 <h3 class="ourteam__subtitle">Микола Тарасов</h3>
                 <p class="ourteam__text" lang="en">Marketing</p>
@@ -386,12 +557,65 @@
               </div>
             </li>
             <li class="ourteam__item card-set__items">
-              <img
-                src="./images/our-team-4.jpg"
-                width="270"
-                height="260"
-                alt=""
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-4@1x_lg.webp 1x,
+                    ./images/ourteam/our-team-4@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images/ourteam/our-team-4@1x_lg.jpg 1x,
+                    ./images/ourteam/our-team-4@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-4@1x_md.webp 1x,
+                    ./images/ourteam/our-team-4@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/ourteam/our-team-4@1x_md.jpg 1x,
+                    ./images/ourteam/our-team-4@2x_md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- desktop screen -->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-4@1x_sm.webp 1x,
+                    ./images/ourteam/our-team-4@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images/ourteam/our-team-4@1x_sm.jpg 1x,
+                    ./images/ourteam/our-team-4@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/ourteam/our-team-4@1x_sm.jpg"
+                  width="450"
+                  height="260"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="ourteam__wrapper">
                 <h3 class="ourteam__subtitle">Михайло Єрмаков</h3>
                 <p class="ourteam__text" lang="en">UI Designer</p>
@@ -453,7 +677,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Clients -->
       <section class="clients section">
         <div class="container">
