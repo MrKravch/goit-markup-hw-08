@@ -7,8 +7,32 @@
   gap: 8px;
   justify-content: center;
 
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
   &--offset {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.examples__list {
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
   }
 }
 
