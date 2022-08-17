@@ -21,7 +21,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
@@ -30,6 +29,16 @@
         <a href="/" class="logo logo--ident-right">
           <span class="logo--accent">Web</span>Studio</a
         >
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="./images/icons.svg#toggle_menu"></use>
+          </svg>
+        </button>
         <nav class="site-nav site-nav--offset">
           <ul class="site-nav__list">
             <li class="site-nav__item">
@@ -445,5 +454,92 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="btn-close mobile-menu__btn-close js-close-menu">
+        <svg class="btn-close__icon" width="30" height="30">
+          <use href="./images/icons.svg#btn-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__nav-link" href="/">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__nav-link mobile-menu__link--current"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link mobile-menu__nav-link"
+            >Контакти</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__tel" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/mobile-menu.js"></script>
   </body>
 </html>
