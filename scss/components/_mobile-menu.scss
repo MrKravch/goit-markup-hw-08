@@ -54,13 +54,20 @@
   }
 
   &__tel {
-    font-size: 34px;
-    line-height: calc(40 / 34);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(40 / 24);
 
     color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+      line-height: calc(40 / 34);
+    }
   }
 
   &__mail {
+    font-weight: 500;
     font-size: 24px;
     line-height: calc(28 / 24);
 

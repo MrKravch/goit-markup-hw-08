@@ -2,7 +2,7 @@
   @extend %section;
 
   max-width: 480px;
-  height: 400px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -64,7 +64,6 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
-    height: 600px;
 
     padding: 200px 0;
 
